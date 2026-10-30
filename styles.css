@@ -1,0 +1,26 @@
+:root { --bg:#0e0e10; --fg:#e8e6e3; --muted:#888; --accent:#7c5cff; --card:#1a1a1e; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.45 system-ui,sans-serif; }
+main { max-width:880px; margin:0 auto; padding:24px 16px 120px; }
+.eyebrow { letter-spacing:.12em; text-transform:uppercase; font-size:11px; color:var(--muted); margin:18px 0 6px; }
+h1 { font-size:32px; margin:0 0 8px; }
+.lead { color:#ccc; max-width:640px; }
+.status { background:#222; padding:8px 12px; border-radius:6px; font-size:13px; }
+.controls { display:flex; gap:12px; flex-wrap:wrap; margin:12px 0; }
+.controls label { display:flex; flex-direction:column; font-size:12px; color:var(--muted); }
+.controls input, .controls select { background:#222; color:var(--fg); border:1px solid #333; padding:6px 8px; border-radius:4px; }
+.row { display:flex; gap:8px; flex-wrap:wrap; }
+.card { background:var(--card); border:1px solid #333; color:var(--fg); padding:10px 12px; border-radius:8px; text-align:left; cursor:pointer; min-width:140px; }
+.card.on { border-color:var(--accent); background:#2a2240; }
+.card b { display:block; }
+.card span { font-size:12px; color:var(--muted); }
+.bars { display:grid; grid-template-columns:repeat(8,1fr); gap:4px; margin:12px 0; }
+.bar { background:#1e1e22; border-radius:4px; padding:6px; font-size:12px; text-align:center; border:1px solid #333; }
+.bar.active { background:var(--accent); color:#fff; }
+.bar.closer { border-color:#5a4; }
+.dock { position:fixed; bottom:0; left:0; right:0; background:#111; padding:10px 16px; display:flex; gap:8px; justify-content:center; border-top:1px solid #222; }
+.dock button { background:var(--accent); color:#fff; border:none; padding:10px 16px; border-radius:6px; cursor:pointer; }
+.dock button.ghost { background:transparent; border:1px solid #444; }
+.exports { margin:16px 0; display:flex; gap:8px; }
+.exports button { background:#333; color:var(--fg); border:1px solid #444; padding:8px 12px; border-radius:4px; cursor:pointer; }
+pre { background:#111; padding:12px; border-radius:6px; overflow:auto; font-size:12px; white-space:pre-wrap; }

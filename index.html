@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CloseEight — eight-bar closer desk</title>
+  <meta name="description" content="Eight live-instrument bars that resolve your loop so the song can finally stop. Live FluidR3 chairs." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<main>
+  <p class="eyebrow">WorkinWithAI · live chairs</p>
+  <h1>CloseEight</h1>
+  <p class="lead">Eight-bar closer desk. Your loop has no ending. Session players write eight live bars that build, resolve, and land on the tonic so the song can finally stop. Live piano, upright bass, nylon, kit, violin. Not a last-chorus tag. Not a key change. Distinct from EndEight and LastHook.</p>
+  <p class="status" id="status">Tap to start audio · seating chairs…</p>
+  <div class="controls">
+    <label>BPM <input type="number" id="bpm" min="60" max="180" value="92" /></label>
+    <label>Key <select id="key"><option>A minor</option><option>C major</option><option>E major</option><option>D minor</option><option>G major</option></select></label>
+    <label>Chords <input type="text" id="chords" value="Am F C G" placeholder="Am F C G" /></label>
+  </div>
+  <p class="eyebrow">Closer</p>
+  <div class="row" id="recipes"></div>
+  <p class="eyebrow">Form · loop 1–4 · closer 5–12</p>
+  <div class="bars" id="bars"></div>
+  <h2>Punch list</h2>
+  <pre id="punch"></pre>
+  <div class="exports">
+    <button id="exportWav">Export WAV (loop)</button>
+    <button id="exportMid">Export MIDI</button>
+  </div>
+</main>
+<div class="dock">
+  <button id="playLoop">Loop</button>
+  <button id="playFull">Full form</button>
+  <button id="playClose">Closer only</button>
+  <button class="ghost" id="stop">Stop</button>
+  <button class="ghost" id="copy">Copy punch</button>
+</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
